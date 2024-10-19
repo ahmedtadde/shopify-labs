@@ -1,0 +1,32 @@
+[project]
+name = "simple-products-search-py"
+version = "0.1.0"
+description = "Shopify Products Search CLI"
+readme = "README.md"
+requires-python = ">=3.12"
+
+[tool.poetry]
+name = "simple-products-search-py"
+version = "0.1.0"
+description = "Shopify products search CLI"
+authors = ["Ahmed <ahmedtadde@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "sps.py"}]
+
+[tool.poetry.scripts]
+sps = "sps:cli"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+duckdb = "^1.1.2"
+click = "^8.1.7"
+tabulate = "^0.9.0"
+numpy = "^2.1.2"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
